@@ -1,0 +1,2 @@
+SYNTHETIC / FOR TESTING ONLY
+Invented tabular regression dataset.

@@ -1,0 +1,3 @@
+# SYNTHETIC / FOR TESTING ONLY
+
+Authored for TASK_003 Phase C deterministic development checks. Not BMS exports, public field observations, sponsor data, or independent operating-performance evidence. All source values are explicit synthetic inputs. Complete: three one-minute good/running windows, water volumetric flow 1 L/s, 20 C inlet, 30 C outlet, supplied density 1000 kg/m3 and cp 4180 J/(kg K), measured signed thermal power 41.8 kW. Incomplete removes flow readings. Misleading supplies mutually exclusive opposite connection documents and power 1 kW. Every root carries a synthetic marker. Reference arithmetic is outside all inference roots and read only by demonstration assertions after pipeline execution. No reference graph or truth is consumed by inference.

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ontology Explorer · Building Intelligence</title><link rel="stylesheet" href="/explorer.css"><link rel="stylesheet" href="/workspace.css"><script defer src="/explorer.js"></script><script defer src="/workspace.js"></script><script defer src="/review.js"></script><script defer src="/onboarding.js"></script><link rel="stylesheet" href="/onboarding.css"><script defer src="/evidence.js"></script><link rel="stylesheet" href="/evidence.css"><script defer src="/source_viewer.js"></script><link rel="stylesheet" href="/source_viewer.css"><link rel="stylesheet" href="/review.css"></head>
+<body>
+<div id="lock" class="lock"><form id="loginForm" class="login"><div class="mark">▣</div><p class="eyebrow">BUILDING INTELLIGENCE</p><h1>Your building, understood.</h1><p>Unlock the private local workspace to explore an evidence-backed building ontology.</p><label for="password">Local password</label><input id="password" type="password" minlength="16" autocomplete="current-password" required><button type="submit" class="primary">Unlock workspace</button><p class="small">Runs and source evidence stay on this machine.</p></form></div>
+<div id="shell" hidden>
+<aside class="sidebar">
+<div class="brand"><div class="mark">▣</div><div><strong>Ontology</strong><small>BUILDING INTELLIGENCE</small></div></div>
+<p class="side-label">WORKSPACE</p>
+<nav aria-label="Workspace navigation">
+<button class="nav" data-view="overview"><span class="ni">▤</span> Overview</button>
+<button class="nav active" data-view="explorer"><span class="ni">◇</span> Ontology Explorer</button>
+<button class="nav" data-view="inventory"><span class="ni">▦</span> Asset inventory</button>
+<button class="nav" data-view="review"><span class="ni">◈</span> Review & evidence</button>
+<button class="nav" data-view="exports"><span class="ni">⇩</span> Run & exports</button>
+<button class="nav" data-view="generate"><span class="ni">✦</span> Generate ontology</button>
+<button class="nav" data-view="quality"><span class="ni">◇</span> Data quality</button>
+<button class="nav" data-view="insights"><span class="ni">◴</span> Insights</button>
+<button class="nav" data-view="tour"><span class="ni">↗</span> Guided tour</button>
+<button class="nav" data-view="setup"><span class="ni">⚙</span> Model setup</button>
+</nav>
+<div class="side-bottom"><span class="dot"></span><span>Local · Private</span><button id="lockButton" title="Lock session">Lock</button></div>
+</aside>
+<div class="main">
+<header class="topbar"><div class="crumb">Workspace <span>/</span> <strong id="runCrumb">Select a completed run</strong></div><div class="top-controls"><label class="visually-hidden" for="runs">Completed building run</label><select id="runs"><option value="">Select a run</option></select><button id="refresh" class="ghost">↻ Refresh</button><button id="commandOpen" class="ghost" type="button" aria-keyshortcuts="Control+K Meta+K">⌘ K · Search</button><button id="themeToggle" class="ghost" type="button" aria-label="Toggle color theme">Theme</button><a href="/legacy" class="legacy" title="Existing audited review tools">Legacy review tools ↗</a></div></header>
+<div id="notice" role="status" aria-live="polite" class="notice">Choose a completed run. This explorer never changes ontology data.</div>
+<main>
+<section class="page" id="overviewPage" hidden>
+<div class="page-head"><div><p class="eyebrow">EVIDENCE-FIRST BUILDING INTELLIGENCE</p><h1>Understand your building.</h1><p class="muted">Explore exactly what the data establishes, what remains uncertain, and what to review next.</p></div><span id="overviewOrigin" class="pill">Select a building</span></div>
+<div class="workspace-hero panel"><div><p class="eyebrow">YOUR WORKSPACE</p><h2>From raw data to an explainable model</h2><p class="muted">Create a building model, trace assertions to original records, and export a standards-based ontology. Uncertainty remains visible throughout.</p><div class="workspace-actions"><button id="overviewStart" type="button" class="primary">Build an ontology</button><button id="overviewTour" type="button" class="secondary">Explore the workflow</button></div></div><div class="hero-graphic" aria-hidden="true"><span>INPUT</span><i>→</i><span>MODEL</span><i>→</i><span>EVIDENCE</span></div></div>
+<div class="kpis" id="overviewMetrics" aria-live="polite"><div class="metric"><strong>—</strong><span>Systems</span></div><div class="metric"><strong>—</strong><span>Equipment</span></div><div class="metric"><strong>—</strong><span>Points</span></div><div class="metric"><strong>—</strong><span>Claims</span></div></div>
+<div class="workspace-columns"><div class="panel text-panel"><div class="workspace-panel-head"><h2>Evidence status</h2><span class="small">From the selected run</span></div><div id="overviewStatuses" aria-live="polite"><p class="muted">Select a completed run to see its source-backed status distribution.</p></div></div><div class="panel text-panel"><div class="workspace-panel-head"><h2>Next actions</h2><span class="small">No automated engineering claims</span></div><div id="overviewActions" class="workspace-action-list"><p class="muted">Start a synthetic demonstration or select a completed model.</p></div></div></div>
+</section>
+<section class="page" id="qualityPage" hidden>
+<div class="page-head"><div><p class="eyebrow">ENGINEERING INVESTIGATION</p><h1>Data quality</h1><p class="muted">Inspect exported findings without equating a flagged anomaly to proven equipment failure.</p></div><button id="qualityRefresh" type="button" class="secondary">Refresh findings</button></div>
+<div class="panel text-panel"><div class="workspace-panel-head"><h2>Findings from the selected run</h2><span id="qualityCount" class="pill">No run selected</span></div><div id="qualityList" aria-live="polite"><p class="muted">Select a completed run to inspect quality findings.</p></div></div><div class="workspace-help">Categories: data-quality issues, model conflicts and possible operational issues require different evidence and follow-up actions. An empty report does not prove the building has no faults.</div>
+</section>
+<section class="page" id="insightsPage" hidden>
+<div class="page-head"><div><p class="eyebrow">ENERGY & GRID HARMONY</p><h1>Engineering readiness</h1><p class="muted">Understand what the ontology enables and which measurements are prerequisites for more advanced analyses.</p></div></div>
+<div class="workspace-columns"><div class="panel text-panel"><h2>Peak-demand attribution</h2><p class="muted">Requires correctly associated electrical meters, demand telemetry, time alignment and equipment attribution.</p><div class="readiness-state">Requirements template · not a completed assessment</div><button class="secondary insightExplore" data-search="meter">Find mapped meters</button></div><div class="panel text-panel"><h2>HVAC thermal performance</h2><p class="muted">Requires inlet/outlet temperatures, measured flow, comparable units, fluid properties and operating context.</p><div class="readiness-state">Requirements template · not a completed assessment</div><button class="secondary insightExplore" data-search="temperature">Find temperature points</button></div></div>
+<div class="panel text-panel"><div class="workspace-panel-head"><h2>Selected building inventory</h2><span class="small">Evidence-backed graph counts</span></div><div id="insightFacts"><p class="muted">Select a completed run to inspect the entities available for analysis.</p></div><p class="small">This view is a prerequisite guide, not a simulated energy model or a numeric efficiency score. Detailed engineering-readiness reports remain in the run package.</p></div>
+</section>
+<section class="page" id="tourPage" hidden>
+<div class="page-head"><div><p class="eyebrow">THREE-STEP PRODUCT WALKTHROUGH</p><h1>See how evidence becomes a building model.</h1><p class="muted">Use the offline synthetic demonstration. It is explicitly synthetic and makes no claims about real-world building performance.</p></div></div>
+<div class="tour-steps">
+<div class="panel text-panel"><span class="tour-number">01</span><h2>Generate a transparent model</h2><p class="muted">Run the built-in synthetic example without API keys or external requests. Explore the staged candidate assertions and validation output.</p><button class="primary" id="tourGenerate">Prepare synthetic demo</button></div>
+<div class="panel text-panel"><span class="tour-number">02</span><h2>Follow a relationship to its source</h2><p class="muted">Open an entity or link in the graph. Inspect exact claim IDs, original records, and the supporting status without inventing missing connections.</p><button class="secondary" id="tourExplore">Open Explorer</button></div>
+<div class="panel text-panel"><span class="tour-number">03</span><h2>Review uncertainty and export</h2><p class="muted">Investigate grouped questions, use the existing audited review workflow, and download the full model and evidence package.</p><button class="secondary" id="tourReview">Review claims</button></div>
+</div></section>
+<section class="page" id="explorerPage">
+<div class="page-head"><div><div class="eyebrow">MECHANICAL ONTOLOGY</div><h1>Explore your building</h1><p class="muted">Discover systems, investigate equipment, and trace every assertion to its source.</p></div><div class="pill" id="origin">No run selected</div></div>
+<div class="kpis" id="metrics"><div class="metric"><strong>—</strong><span>Systems</span></div><div class="metric"><strong>—</strong><span>Equipment</span></div><div class="metric"><strong>—</strong><span>Points</span></div><div class="metric"><strong>—</strong><span>Claims</span></div></div>
+<div class="panel graph-panel">
+<div class="toolbar"><div class="view-tabs" role="tablist" aria-label="Graph level"><button class="tab active" data-mode="systems" role="tab" aria-selected="true">Systems</button><button class="tab" data-mode="equipment" role="tab" aria-selected="false">Equipment</button><button class="tab" data-mode="points" role="tab" aria-selected="false">Points</button></div><div class="tools"><button id="zoomOut" title="Zoom out">−</button><button id="zoomIn" title="Zoom in">+</button><button id="reset" title="Reset graph">Fit</button></div></div>
+<div class="filters"><label>Search <input id="search" type="search" placeholder="Tag, equipment, class…"></label><label>Evidence status <select id="status"><option value="">All statuses</option><option value="verified">Verified</option><option value="supported_inference">Supported inference</option><option value="needs_review">Needs review</option><option value="contradicted">Contradicted</option><option value="rejected">Rejected</option></select></label><button id="applyFilter">Apply filters</button><button id="clearFocus" class="secondary" hidden>← All assets</button></div>
+<div class="graph-layout"><div class="canvas-wrap"><div class="graph-meta"><span id="graphMeta">Select a run to explore its graph</span><span class="subdued">Drag canvas to pan · Scroll to zoom</span></div><svg id="graph" viewBox="0 0 1000 620" role="group" aria-label="Interactive building ontology graph"><text x="60" y="90" fill="currentColor">Select a run to begin.</text></svg><div id="empty" class="empty" hidden>No matching entities. Clear filters or choose another view.</div><div class="legend"><span><i class="legend-line verified"></i> Verified</span><span><i class="legend-line inferred"></i> Supported inference</span><span><i class="legend-line tentative"></i> Unresolved / disputed</span><span><i class="legend-line arrow"></i> Direction only for feeds</span></div><div class="graph-footer"><span id="count">No graph loaded</span><div><button id="previous">Previous</button><button id="next">Next</button></div></div></div>
+<aside class="inspector" id="inspector"><p class="eyebrow">EVIDENCE INSPECTOR</p><h2 id="inspectTitle">Select an entity</h2><p id="inspectSubtitle" class="muted">Choose a node or an edge to inspect the exact claim and source records.</p><div id="inspectBody"><div class="inspect-placeholder"><div class="big-icon">⌕</div><p>Every meaningful relationship can be traced to its supporting evidence.</p></div></div></aside></div>
+</div>
+<section class="panel evidence-register" aria-labelledby="relationshipRegisterTitle">
+<div class="evidence-register-head"><div><p class="eyebrow">ALTERNATIVE TO THE VISUAL GRAPH</p><h2 id="relationshipRegisterTitle">Visible relationship register</h2><p class="muted">Accessible table of the exact claims connecting entities on this graph page. Select a row to inspect the underlying evidence.</p></div><span class="pill" id="relationshipRegisterCount">No relationships loaded</span></div>
+<div class="evidence-register-controls"><label for="relationshipFilter">Relationship type</label><select id="relationshipFilter"><option value="">All types</option></select><label for="relationshipStatus">Evidence status</label><select id="relationshipStatus"><option value="">All statuses</option><option value="verified">Verified</option><option value="supported_inference">Supported inference</option><option value="needs_review">Needs review</option><option value="contradicted">Contradicted</option><option value="rejected">Rejected</option></select></div>
+<div class="evidence-table-scroll"><table class="evidence-table"><caption class="visually-hidden">Source-backed relationship claims on this graph page</caption><thead><tr><th scope="col">Subject</th><th scope="col">Relationship</th><th scope="col">Object</th><th scope="col">Status</th><th scope="col">Evidence</th></tr></thead><tbody id="relationshipRows"><tr><td colspan="5">Select a completed run to see relationships.</td></tr></tbody></table></div>
+<p id="relationshipRegisterNote" class="small">Connections are shown only if a claim explicitly links entities in the current graph projection. The graph is paginated; a missing row is not proof of no relationship.</p>
+</section>
+<p class="disclosure">This view renders only documented claims; it does not infer physical connections from display proximity. BAS folder structure is not piping topology. Status remains authoritative in the underlying claim ledger.</p>
+</section>
+<section class="page" id="inventoryPage" hidden><div class="page-head"><div><p class="eyebrow">EXPLORE</p><h1>Asset inventory</h1><p class="muted">A searchable projection of the source-backed graph, without changing its classification.</p></div></div><div class="panel list-panel"><input id="inventorySearch" type="search" placeholder="Search a tag or class"><div id="inventoryList"></div></div></section>
+<section class="page" id="reviewPage" hidden>
+<div class="page-head"><div><p class="eyebrow">EVIDENCE-BASED ENGINEERING</p><h1>Review &amp; decisions</h1><p class="muted">Prioritize clarification groups, inspect exact documentary sources, preview deterministic changes, and record an auditable pending decision.</p></div><span class="pill" id="reviewOrigin">Select a completed run</span></div>
+<div class="review-banner" role="note">A local review credential is not professional engineering authority. Decisions are recorded as pending, never automatically verified. Original source packages remain immutable.</div>
+<div class="review-topbar panel">
+<div><p class="eyebrow">REVIEW WORKSPACE · V2</p><strong id="reviewWorkspaceName">No run selected</strong><p class="small" id="reviewWorkspaceStatus">Select a completed original run. Derived reviewed packages are immutable snapshots.</p></div>
+<div class="review-top-actions"><span id="reviewRevision" class="pill">Not enrolled</span><button id="reviewEnroll" type="button" class="primary" disabled>Enable local review</button><button id="reviewRefresh" type="button" class="secondary" disabled>Refresh</button></div>
+</div>
+<div class="review-grid">
+<div class="panel review-column">
+<div class="review-section-heading"><div><p class="eyebrow">01 / TRIAGE</p><h2>Review questions</h2></div><span class="small" id="reviewQueueCount">—</span></div>
+<p class="small">Ordered by documented review priority. Group membership is source-declared, not inferred from similar names.</p>
+<div id="reviewNativeGroups" class="review-group-list" aria-live="polite"><p class="muted">Select a run to load questions.</p></div>
+<div class="review-pagination"><button type="button" id="reviewPrevious" class="secondary" disabled>Previous</button><span id="reviewPageLabel" class="small">Page 1</span><button type="button" id="reviewNext" class="secondary" disabled>Next</button></div>
+</div>
+<div class="panel review-column review-evidence">
+<div class="review-section-heading"><div><p class="eyebrow">02 / INVESTIGATE</p><h2 id="reviewSelectedTitle">Select a clarification</h2></div><button id="reviewClear" type="button" class="ghost" disabled>Clear</button></div>
+<p id="reviewSelectedContext" class="muted">The selected question's claims, original source records, alternative interpretations, and contradictions will appear here.</p>
+<div id="reviewSelectedCounts" class="review-counts"></div>
+<div id="reviewClaimList"><p class="muted">No evidence selected.</p></div>
+<div id="reviewSourceList"></div>
+<div id="reviewAlternativeList"></div>
+<div id="reviewConflictList"></div>
+</div>
+<div class="panel review-column review-decision">
+<div class="review-section-heading"><div><p class="eyebrow">03 / DECIDE</p><h2>Documentary correction</h2></div></div>
+<p class="small">Select exact claim(s) and source records. A preview checks scope and documentary evidence before a pending decision can be recorded.</p>
+<form id="reviewActionForm">
+<fieldset id="reviewActionFields" disabled>
+<label for="reviewCorrectionKind">Correction type</label><select id="reviewCorrectionKind"><option value="class_choice">Correct class</option><option value="naming_alias">Document naming alias</option><option value="ownership">Correct point ownership</option><option value="physical_relationship">Correct documented connection</option><option value="reject_connection">Withdraw unsupported connection</option><option value="source_clarification">Clarify documented source field</option></select>
+<div id="reviewAliasWrap" hidden><label for="reviewAlias">Documented naming prefix</label><input id="reviewAlias" type="text" maxlength="200" placeholder="Exact source naming hint"></div>
+<div id="reviewFieldWrap" hidden><label for="reviewField">Source field</label><select id="reviewField"><option value="point_class">Point class</option><option value="equipment_type">Equipment type</option><option value="equipment_id">Equipment owner ID</option></select></div>
+<div class="review-edit-wrap"><label>Explicit proposed edits</label><div id="reviewEditList" class="review-edits"><p class="small">Choose at least one claim.</p></div></div>
+<label for="reviewReason">Documentary rationale</label><textarea id="reviewReason" rows="3" maxlength="2000" placeholder="Explain the specific source-backed interpretation. Do not rely on model confidence."></textarea>
+<label for="reviewSupersedes">Explicitly supersede prior event ID (only when replacing a decision)</label><input id="reviewSupersedes" maxlength="256" placeholder="No automatic undo or replacement">
+<button id="reviewPreview" type="submit" class="primary" disabled>Preview exact consequences</button>
+</fieldset></form>
+<div id="reviewPreviewState" role="status" class="review-preview-result">No current correction preview.</div>
+<div id="reviewPreviewDetails"></div>
+<div class="review-confirm"><label><input id="reviewConfirm" type="checkbox" disabled> I have inspected the exact preview, its withheld or applied outcomes, and the linked source evidence.</label><button id="reviewRecord" type="button" class="primary" disabled>Record pending decision</button></div>
+</div></div>
+<div class="review-bottom">
+<div class="panel text-panel"><div class="review-section-heading"><h2>Decision history</h2><button id="reviewHistoryRefresh" type="button" class="secondary" disabled>Refresh history</button></div><p class="small">Append-only local review ledger. Revision changes invalidate any prepared preview.</p><div id="reviewHistoryList"><p class="muted">Enable local review to inspect decision history.</p></div><div class="review-pagination"><button id="reviewHistoryPrevious" class="secondary" disabled>Previous</button><span class="small" id="reviewHistoryPage">Page 1</span><button id="reviewHistoryNext" class="secondary" disabled>Next</button></div></div>
+<div class="panel text-panel"><h2>Publish a reviewed version</h2><p class="muted">Replay the recorded documentary corrections and validate an immutable new run package. The original run is preserved.</p><p class="small">A recorded decision is pending until replay; outcomes may still be withheld by validation or unresolved evidence.</p><button id="reviewPublish" type="button" class="secondary" disabled>Validate &amp; publish reviewed version</button><p id="reviewPublishStatus" role="status" class="small">No review workspace enrolled.</p><div id="reviewPublishedLink"></div></div>
+</div>
+</section>
+<section class="page" id="exportsPage" hidden><div class="page-head"><div><p class="eyebrow">PACKAGE</p><h1>Runs & exports</h1><p class="muted">Download an immutable completed run. Review source-data sensitivity before sharing.</p></div></div><div class="panel text-panel"><h2>Selected run</h2><p id="exportRun">No run selected</p><div id="downloads" class="download-links"></div><p class="small">Downloads may contain private building data. Synthetic fixtures are explicitly labeled.</p></div></section>
+
+<section class="page" id="generatePage" hidden>
+<div class="page-head"><div><p class="eyebrow">NEW BUILDING / GUIDED WORKFLOW</p><h1>From raw data to ontology</h1><p class="muted">Upload your building data, configure inference, approve the cost, and open the generated graph.</p></div><span class="pill">Private local workspace</span></div>
+<div class="wizard-progress" aria-label="Workflow stages"><span class="wizard-current" id="wizStep1">01 · Data</span><span id="wizStep2">02 · Model</span><span id="wizStep3">03 · Approval</span><span id="wizStep4">04 · Explore</span></div>
+<div class="setup-columns">
+<div class="panel text-panel">
+<h2>1. Add building data</h2>
+<p class="muted">Upload CSV or XLSX exports containing BAS points, equipment, or documented relationships. Original files stay local until you explicitly approve transmission.</p>
+<form id="guidedFilesForm">
+<label for="guidedFiles">Source files</label><input id="guidedFiles" type="file" accept=".csv,.xlsx" multiple required>
+<p class="small">Maximum 10 files, 2 MB each and 8 MB combined. Standard filenames: <code>points.csv</code>, <code>equipment.csv</code>, <code>connections.csv</code>. The generic importer also supports matching XLSX worksheets.</p>
+<div class="mapping-assistant" id="mappingAssistant"><div class="workspace-panel-head"><strong>Inspect &amp; map source tables</strong><span class="small">CSV + XLSX worksheets · offline · no model call</span></div><p class="small">Inspect column names and a bounded sample before uploading. The preview runs only on your authenticated local server, never an external AI provider. Suggestions are not engineering verification.</p><div class="workspace-actions"><button type="button" class="secondary" id="mappingInspect">Inspect selected files locally</button><button type="button" class="secondary" id="mappingApply" disabled>Apply reviewed mappings</button></div><div id="mappingPreview" role="status" aria-live="polite"><p class="small">Select files, then choose Inspect. No input data has been processed.</p></div></div><details class="advanced"><summary>Advanced: data mapping</summary><p class="small">For unfamiliar filenames, specify table mappings using the existing canonical schema. Example: {"tables":[{"file":"BAS.csv","kind":"points"}]}</p><label for="guidedMapping">Optional JSON mapping</label><textarea id="guidedMapping" rows="3" spellcheck="false">{}</textarea></details>
+<button class="primary" type="submit">Upload locally & inspect</button>
+</form>
+<div id="guidedUploadResult" role="status" class="guided-feedback">No files uploaded yet.</div>
+<hr class="soft-rule">
+<h2>2. Select processing mode</h2>
+<label for="guidedProvider">Inference provider</label>
+<select id="guidedProvider"><option value="offline">Offline synthetic demonstration (free)</option><option value="openai">OpenAI API · generic CSV/XLSX inference</option><option value="anthropic">Anthropic / Claude · restricted workflow</option></select>
+<p id="guidedProviderDescription" class="small">Use a built-in synthetic fixture to try the complete pipeline without uploading or transmitting building data.</p>
+<div id="guidedOpenAIFields" hidden>
+<label for="guidedBuildingId">Building identifier</label><input id="guidedBuildingId" placeholder="site:example-building" maxlength="200" value="site:demo-building">
+<label for="guidedModel">OpenAI model identifier</label><input id="guidedModel" placeholder="Enter an API model ID" maxlength="100" autocomplete="off">
+<p class="small">Choose a model available to your API project. <a href="https://platform.openai.com/docs/models" target="_blank" rel="noopener noreferrer">View supported models ↗</a>. Credential management is under <button type="button" id="guidedGoSetup" class="text-link">Model setup</button>.</p>
+<div class="rate-grid"><label>Input price (USD / 1M tokens)<input id="guidedInputRate" type="number" min="0.000001" max="1000" step="any" placeholder="From provider pricing"></label><label>Output price (USD / 1M tokens)<input id="guidedOutputRate" type="number" min="0.000001" max="1000" step="any" placeholder="From provider pricing"></label></div>
+<label>Maximum authorized model cost (USD)<input id="guidedCap" type="number" min="0.000001" max="100" step="any" value="1"></label>
+<p class="small">Enter your model's current rates using the <a href="https://openai.com/api/pricing/" target="_blank" rel="noopener noreferrer">official pricing page ↗</a>. We use conservative bounds and refuse a cap too small for the configured maximum request. We do not claim these rates are independently verified.</p>
+</div>
+<div id="guidedAnthropicNotice" class="guided-feedback" hidden>
+<strong>Separate external-processing authorization required.</strong> Restricted model workflows require dataset-specific approval, data-class checks, and explicit usage budgets. This browser interface does not launch those restricted workflows.
+<p><a href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener noreferrer">Anthropic API key guide ↗</a></p>
+</div>
+<button id="guidedPreflight" class="primary" type="button">Review processing plan</button>
+</div>
+<div class="panel text-panel">
+<h2>3. Review & approve</h2><p class="muted">No external data is transmitted when creating a plan. Review the exact source files, the processing model and the operator-priced conservative upper bound.</p>
+<div id="guidedPlan" class="guided-plan"><p>No plan generated yet. Select a provider, upload your files, then review the plan.</p></div>
+<div id="guidedApproval" hidden>
+<label class="check-line"><input type="checkbox" id="guidedAgreePrivacy"> I authorize transmission of the identified building data to the specified external provider.</label>
+<label class="check-line"><input type="checkbox" id="guidedAgreeCost"> I approve the shown model and budget cap using the listed operator-supplied pricing assumptions.</label>
+<button id="guidedRun" type="button" class="primary">Approve & generate ontology</button>
+</div>
+<div id="guidedRunStatus" role="status" aria-live="polite" class="guided-feedback">No analysis started.</div>
+<hr class="soft-rule">
+<h2>4. Explore the result</h2><p class="muted">When the run is published and passes package-integrity checks, open the graph to inspect systems, equipment, point classifications, evidence, and remaining uncertainty.</p>
+<button id="guidedExplore" type="button" class="secondary" disabled>Open generated ontology ↗</button>
+<p class="small">This is a repeatable, evidence-backed ontology generator. Schema validation and high model confidence alone do not establish physical connectivity.</p>
+</div></div>
+</section>
+<section class="page" id="setupPage" hidden>
+<div class="page-head"><div><p class="eyebrow">GET STARTED</p><h1>Connect an AI model</h1><p class="muted">Set up an API key directly in the local application. No Terminal configuration required for supported browser runs.</p></div></div>
+<div class="setup-columns">
+<div class="panel text-panel">
+<h2>1. Get an OpenAI API key</h2>
+<p class="muted">Create a key in your OpenAI API project. API billing is separate from your ChatGPT subscription.</p>
+<ol class="setup-steps"><li>Open the API dashboard and sign in.</li><li>Create a project key and copy it immediately.</li><li>Check API billing and spending limits before starting a paid run.</li><li>Return here and paste your key below.</li></ol>
+<div class="setup-links"><a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer">Create an OpenAI API key ↗</a><a href="https://platform.openai.com/settings/organization/billing/overview" target="_blank" rel="noopener noreferrer">Manage API billing ↗</a></div>
+<h2>2. Connect locally</h2>
+<form id="credentialForm" autocomplete="off"><label for="providerKey">API key</label><div class="key-row"><input id="providerKey" type="password" placeholder="Paste OpenAI API key" autocomplete="off" autocapitalize="off" spellcheck="false" minlength="16" maxlength="512" required><button type="submit" class="primary">Connect key</button></div></form>
+<p class="small" id="credentialStatus">Checking connection settings…</p><button id="forgetKey" type="button" class="secondary">Forget browser key</button>
+<p class="small">Your browser sends the key only to this local server. It stays in memory for this login, is never added to an ontology package, and is not sent to the API provider until you explicitly authorize a paid analysis. This step does not validate the key with the provider.</p>
+</div>
+<div class="panel text-panel">
+<h2>3. Generate an ontology</h2><p>Once connected, open the guided workflow to upload CSV/XLSX building data, choose your model, review the budget, and explicitly approve processing.</p>
+<button id="setupToGenerate" type="button" class="primary">Open guided generation ↗</button>
+<p class="small">The guided browser supports generic OpenAI inference and offline synthetic demonstrations. Restricted Anthropic/Claude workflows require separate authorization and are not executed here.</p>
+<hr class="soft-rule">
+<h2>Using Anthropic / Claude?</h2><p class="muted">Restricted external-model workflows require separate approvals and budget limits. This page does not connect an Anthropic key to a restricted workflow.</p>
+<a href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener noreferrer">Claude Console API keys ↗</a>
+<p class="small">Do not paste an Anthropic key into the OpenAI field. Only upload data that you are authorized to share with the selected external model provider.</p>
+</div></div></section>
+</main></div></div><dialog id="commandPalette" class="command-dialog" aria-labelledby="commandTitle"><form method="dialog"><div class="command-title"><h2 id="commandTitle">Jump to anything</h2><button value="cancel" class="ghost" aria-label="Close search">Esc</button></div><label for="commandQuery" class="visually-hidden">Find an asset or navigate</label><input id="commandQuery" type="search" placeholder="Search equipment, points, or a workspace…" autocomplete="off"><div id="commandResults" class="command-results" role="listbox"></div><p class="small">Enter to search selected building · Escape to close</p></form></dialog>
+<dialog id="sourceViewerDialog" class="source-viewer-dialog" aria-labelledby="sourceViewerTitle" aria-describedby="sourceViewerPrivacy">
+<div class="source-viewer-top"><div><p class="eyebrow">PRIVATE SOURCE INSPECTION</p><h2 id="sourceViewerTitle">Inspect original source</h2><p id="sourceViewerReference" class="small"></p><p id="sourceViewerExpectedHash" class="source-viewer-hash"></p></div><button id="sourceViewerClose" type="button" class="ghost" aria-label="Close local source viewer">Close</button></div>
+<p id="sourceViewerPrivacy" class="source-viewer-privacy">Select the original file on this device. SHA-256 verification runs in your browser; the file is not uploaded, stored in the server, or shared with an external AI service. A verified hash confirms file identity, not mechanical connectivity or professional approval.</p>
+<div class="source-viewer-controls">
+<label for="sourceViewerFile">Original local file <input id="sourceViewerFile" type="file" accept=".pdf,.csv,.txt,.json,.jsonl,.png,.jpg,.jpeg,.xlsx"></label>
+<button id="sourceViewerVerify" type="button" class="primary">Verify SHA-256 &amp; preview</button>
+<button id="sourceViewerExternal" type="button" class="secondary" disabled>Open verified original in new tab</button>
+</div>
+<p id="sourceViewerStatus" class="source-viewer-status" role="status" aria-live="polite">No local file selected.</p>
+<div id="sourceViewerPageControl" class="source-viewer-page" hidden><label for="sourceViewerPage">Manual PDF page (not an inferred source coordinate)</label><input id="sourceViewerPage" type="number" min="1" max="9999" value="1" step="1"></div>
+<div id="sourceViewerPreview" aria-live="polite"></div>
+<div id="sourceViewerPdfFrame" class="source-viewer-frame" hidden><iframe id="sourceViewerPdf" title="Hash-matched original PDF document" sandbox="" referrerpolicy="no-referrer"></iframe></div>
+<div id="sourceViewerImageFrame" class="source-viewer-image-wrap" hidden><img id="sourceViewerImage" alt="Hash-matched original source image"></div>
+<p class="small">Browser PDF support varies across operating systems; use “Open verified original” if the inline viewer does not render. No coordinates are highlighted unless independently documented by a future verified drawing adapter.</p>
+</dialog>
+</body></html>

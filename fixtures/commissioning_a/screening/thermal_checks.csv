@@ -1,0 +1,2 @@
+check_id,equipment_id,inlet_point_id,outlet_point_id,flow_point_id,power_point_id,medium,mode,density,density_units,specific_heat,specific_heat_units,assumptions,window_start,window_end,sample_period_seconds,max_gap_seconds,min_samples,tolerance_fraction
+C7.balance,HX.C7,C7.tin,C7.tout,C7.flow,C7.heat,water,heating,998,kg/m3,4186,J/(kg*K),steady_state_sensible_water,2026-02-02T09:00:00+00:00,2026-02-02T09:03:00+00:00,60,90,4,0.08

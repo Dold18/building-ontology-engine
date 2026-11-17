@@ -1,0 +1,2 @@
+SYNTHETIC / FOR TESTING ONLY
+Developer-created commissioning acceptance scenario, not sponsor data or verified faults.

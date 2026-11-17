@@ -1,0 +1,4 @@
+SYNTHETIC / FOR TESTING ONLY. Developer-authored Phase B building.
+Five uncertain points share an explicitly declared naming convention. The separate
+documented_point_class column is supplied documentary context, not an authenticated
+engineering certification. No sponsor equipment or readings are represented.

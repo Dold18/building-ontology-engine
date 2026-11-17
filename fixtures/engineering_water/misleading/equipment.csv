@@ -1,0 +1,4 @@
+equipment_id,equipment_type
+HX-A,Heat_Exchanger
+PUMP-B,Pump
+LOAD-C,Heat_Exchanger

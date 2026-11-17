@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "tables": [
+    {"file": "assets.xlsx", "sheet": "Machines", "kind": "equipment", "columns": {"equipment_id": "Asset Tag", "equipment_type": "Device Family"}},
+    {"file": "assets.xlsx", "sheet": "Telemetry A", "kind": "points", "columns": {"point_id": "BAS Tag", "description": "Text", "equipment_id": "Parent", "units": "Engineering Unit", "value": "Sample"}},
+    {"file": "assets.xlsx", "sheet": "Telemetry B", "kind": "points", "columns": {"point_id": "BAS Tag", "description": "Text", "equipment_id": "Parent", "units": "Engineering Unit", "value": "Sample"}},
+    {"file": "assets.xlsx", "sheet": "Water Path", "kind": "connections", "columns": {"from_equipment": "Upstream", "to_equipment": "Downstream", "source_description": "Evidence", "status": "Disposition"}}
+  ]
+}

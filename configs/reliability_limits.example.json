@@ -1,0 +1,6 @@
+{
+  "max_files": 100,
+  "max_total_bytes": 50000000,
+  "max_requests": 1,
+  "max_run_seconds": 300
+}

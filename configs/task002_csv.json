@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "tables": [
+    {"file": "asset-register.csv", "kind": "equipment", "columns": {"equipment_id": "Asset Reference", "equipment_type": "Family"}},
+    {"file": "tag-export.csv", "kind": "points", "columns": {"point_id": "Tag", "description": "Label", "equipment_id": "Owner", "units": "Unit", "value": "Reading"}},
+    {"file": "pipe-edges.csv", "kind": "connections", "columns": {"from_equipment": "Source", "to_equipment": "Target", "source_description": "Document"}}
+  ]
+}

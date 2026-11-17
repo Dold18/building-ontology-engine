@@ -1,0 +1,5 @@
+point_id,equipment_id,point_class,quantity_kind,units,measurement_role
+inlet-A,HX-A,Temperature_Sensor,temperature,degC,inlet
+outlet-A,HX-A,Temperature_Sensor,temperature,degC,outlet
+flow-A,HX-A,Water_Flow_Sensor,volume_flow,L/s,flow
+power-A,HX-A,Thermal_Power_Sensor,power,kW,power

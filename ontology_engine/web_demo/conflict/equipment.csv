@@ -1,0 +1,5 @@
+equipment_id,equipment_type,controller_id,channel_id,measurement_role
+AHU/West,AHU,DDC-41,A1,Supply Air Temperature
+Terminal.Left,VAV,,,
+Terminal.Right,VAV,,,
+Hydronic-aux,Pump,,,

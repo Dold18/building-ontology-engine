@@ -1,0 +1,9 @@
+point_id,equipment_id,point_class,units,quantity_kind,description
+,Main-1,Temperature_Sensor,degC,temperature,SYNTHETIC missing tag
+DUP,Main-1,Temperature_Sensor,degC,temperature,SYNTHETIC duplicate analog tag
+DUP,Mystery-9,Pressure_Sensor,Pa,pressure,SYNTHETIC competing duplicate tag
+T.bad-unit,Main-1,Temperature_Sensor,kW,temperature,SYNTHETIC inconsistent engineering units
+Z.unmapped,Ghost-Owner,Zone_Air_Temperature_Sensor,degC,temperature,SYNTHETIC owner absent from schedule
+AI.opaque,Mystery-9,unknown,,,SYNTHETIC unknown class and units
+"=HYPERLINK(""x"")",Main-1,unknown,,,<script>window.injected=true</script> SYNTHETIC untrusted source text
+broken-row,Main-1

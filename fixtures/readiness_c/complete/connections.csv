@@ -1,0 +1,6 @@
+connection_id,from_equipment,to_equipment,predicate,medium,status,connection_scope,direction_exclusive,source_description
+service-1,HX-A,AHU-A,feeds,water,supported_inference,,,SYNTHETIC schedule: heat exchanger supplies AHU coil circuit
+service-2,AHU-A,Zone-A,feeds,air,supported_inference,,,SYNTHETIC duct schedule supplies Zone-A
+uncertain,AHU-A,Zone-Unknown,feeds,air,needs_review,,,SYNTHETIC uncertain branch; must remain withheld
+meter,Meter-A,HX-A,meters,electricity,supported_inference,,,SYNTHETIC documented dedicated equipment meter
+withheld-meter,Meter-Withheld,AHU-A,meters,electricity,contradicted,,,SYNTHETIC disputed panel mapping

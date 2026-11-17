@@ -1,0 +1,2 @@
+SYNTHETIC / FOR TESTING ONLY
+Developer-authored arithmetic and query fixture. No sponsor or field readings.

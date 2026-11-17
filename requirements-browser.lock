@@ -1,0 +1,5 @@
+# Optional real-browser test tooling; not needed to run the application.
+# CPython 3.9.6 macOS arm64, with requirements-dev.lock.
+playwright==1.51.0
+pyee==12.1.1
+greenlet==3.2.5

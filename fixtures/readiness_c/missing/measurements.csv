@@ -1,0 +1,10 @@
+measurement_id,point_id,equipment_id,quantity_kind,value,units,timestamp,quality,operating_state,unsigned_flow
+in0,Tin,HX-A,temperature,20,degC,2026-01-01T00:00:00Z,good,running,true
+out0,Tout,HX-A,temperature,30,degC,2026-01-01T00:00:00Z,good,running,true
+heat0,Heat,HX-A,power,41.8,kW,2026-01-01T00:00:00Z,good,running,true
+in1,Tin,HX-A,temperature,20,degC,2026-01-01T00:01:00Z,good,running,true
+out1,Tout,HX-A,temperature,30,degC,2026-01-01T00:01:00Z,good,running,true
+heat1,Heat,HX-A,power,41.8,kW,2026-01-01T00:01:00Z,good,running,true
+in2,Tin,HX-A,temperature,20,degC,2026-01-01T00:02:00Z,good,running,true
+out2,Tout,HX-A,temperature,30,degC,2026-01-01T00:02:00Z,good,running,true
+heat2,Heat,HX-A,power,41.8,kW,2026-01-01T00:02:00Z,good,running,true

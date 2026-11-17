@@ -1,0 +1,3 @@
+connection_id,from_equipment,to_equipment,medium,source_description,status
+hyd-connection,HYD-9,HX-Z,water,SYNTHETIC explicit schedule,supported_inference
+unconfirmed,HX-Z,HYD-9,water,SYNTHETIC unconfirmed reverse path,needs_review

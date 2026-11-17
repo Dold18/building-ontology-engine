@@ -1,0 +1,5 @@
+from_equipment,to_equipment,medium,connection_scope,direction_exclusive,medium_exclusive
+PLANT-A,PUMP-B,water,one-way-pipe,true,false
+PUMP-B,PLANT-A,water,one-way-pipe,true,false
+PLANT-A,TERMINAL-C,air,single-fluid-duct,false,true
+PLANT-A,TERMINAL-C,water,single-fluid-duct,false,true

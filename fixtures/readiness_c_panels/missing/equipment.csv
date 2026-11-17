@@ -1,0 +1,9 @@
+equipment_id,equipment_type
+HX-A,Heat_Exchanger
+AHU-A,AHU
+Zone-A,HVAC_Zone
+Zone-Unknown,HVAC_Zone
+Meter-A,Electrical_Meter
+Meter-Withheld,Electrical_Meter
+Unknown-A,Equipment
+Panel-A,Equipment

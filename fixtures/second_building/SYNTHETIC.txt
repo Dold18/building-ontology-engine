@@ -1,0 +1,2 @@
+SYNTHETIC / FOR TESTING ONLY
+These are invented regression examples, never sponsor-building evidence.

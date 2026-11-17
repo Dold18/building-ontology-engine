@@ -1,0 +1,4 @@
+equipment_id,equipment_type,serves_zone,notes
+AHU-1,Air Handling Unit,East Floor,Supply air handler
+VAV-101,VAV Terminal,Room 101,Variable air volume terminal
+VAV-102,VAV Terminal,Room 102,Variable air volume terminal

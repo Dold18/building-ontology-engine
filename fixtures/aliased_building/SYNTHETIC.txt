@@ -1,0 +1,2 @@
+SYNTHETIC / FOR TESTING ONLY
+Invented CSV dataset with vendor-style aliases.

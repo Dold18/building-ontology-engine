@@ -1,0 +1,232 @@
+{
+  "schema_version": "engineering-v1",
+  "policy_version": "engineering-screen-v1",
+  "rules": [
+    {
+      "rule_id": "measurement.dimension",
+      "version": "1.0.0",
+      "applicability": "Explicit point quantity/class or measurement row",
+      "required_inputs": [
+        "point metadata; measurements optional"
+      ],
+      "unit_dimensions": {
+        "quantity": "explicit quantity_kind or supported Brick sensor class"
+      },
+      "time_prerequisites": [],
+      "operating_prerequisites": [],
+      "outcomes": [
+        "pass",
+        "fail",
+        "not_evaluable",
+        "blocked",
+        "error"
+      ],
+      "reason_codes": [
+        "DIMENSION_COMPATIBLE",
+        "DIMENSION_OR_TEMPERATURE_KIND_MISMATCH",
+        "INVALID_NUMERIC_VALUE",
+        "INVALID_SOURCE_RECORD",
+        "INVALID_STATUS_VALUE",
+        "MEASUREMENT_QUALITY_NOT_GOOD",
+        "MISSING_QUANTITY_OR_UNIT",
+        "NONFINITE_VALUE",
+        "POINT_IDENTITY_UNRESOLVED",
+        "SENSOR_ROLE_QUANTITY_MISMATCH",
+        "UNKNOWN_QUANTITY_KIND",
+        "UNKNOWN_UNIT"
+      ],
+      "severity": "review",
+      "evidence_references": [
+        "source record IDs/UIDs and original file hashes",
+        "Phase A claim/observation/conflict UIDs as applicable"
+      ]
+    },
+    {
+      "rule_id": "measurement.range",
+      "version": "1.0.0",
+      "applicability": "Good-quality, dimension-resolved absolute temperature or explicitly unsigned flow",
+      "required_inputs": [
+        "value",
+        "quantity_kind",
+        "units",
+        "quality"
+      ],
+      "unit_dimensions": {
+        "temperature": "K absolute",
+        "unsigned flow": "m3/s or kg/s"
+      },
+      "time_prerequisites": [],
+      "operating_prerequisites": [],
+      "outcomes": [
+        "pass",
+        "fail",
+        "not_evaluable",
+        "blocked",
+        "error"
+      ],
+      "reason_codes": [
+        "ABSOLUTE_TEMPERATURE_NONNEGATIVE",
+        "BELOW_ABSOLUTE_ZERO",
+        "NEGATIVE_UNSIGNED_FLOW",
+        "RANGE_NOT_ESTABLISHED",
+        "UNSIGNED_FLOW_NONNEGATIVE"
+      ],
+      "severity": "review",
+      "evidence_references": [
+        "source record IDs/UIDs and original file hashes",
+        "Phase A claim/observation/conflict UIDs as applicable"
+      ]
+    },
+    {
+      "rule_id": "measurement.clock",
+      "version": "1.0.0",
+      "applicability": "Telemetry row",
+      "required_inputs": [
+        "timestamp",
+        "offset or unambiguous IANA timezone"
+      ],
+      "unit_dimensions": {},
+      "time_prerequisites": [
+        "resolve UTC; reject DST ambiguity and conflicting offsets"
+      ],
+      "operating_prerequisites": [],
+      "outcomes": [
+        "pass",
+        "fail",
+        "not_evaluable",
+        "blocked",
+        "error"
+      ],
+      "reason_codes": [
+        "AMBIGUOUS_LOCAL_TIME",
+        "INVALID_TIMESTAMP",
+        "INVALID_TIMEZONE",
+        "MISSING_TIMESTAMP",
+        "MISSING_TIMEZONE",
+        "TIMESTAMP_RESOLVED",
+        "TIMEZONE_OFFSET_MISMATCH"
+      ],
+      "severity": "review",
+      "evidence_references": [
+        "source record IDs/UIDs and original file hashes",
+        "Phase A claim/observation/conflict UIDs as applicable"
+      ]
+    },
+    {
+      "rule_id": "topology.evidence",
+      "version": "1.0.0",
+      "applicability": "Phase A ownership/composition/flow observation",
+      "required_inputs": [
+        "original citations",
+        "Phase A documentary eligibility and explicit scoped conflict records"
+      ],
+      "unit_dimensions": {},
+      "time_prerequisites": [],
+      "operating_prerequisites": [],
+      "outcomes": [
+        "pass",
+        "fail",
+        "not_evaluable",
+        "blocked",
+        "error"
+      ],
+      "reason_codes": [
+        "CONNECTION_OR_OWNERSHIP_NOT_ESTABLISHED",
+        "DOCUMENTARY_RELATION_SUPPORTED",
+        "SUPPORTED_TOPOLOGY_CONFLICT"
+      ],
+      "severity": "review",
+      "evidence_references": [
+        "source record IDs/UIDs and original file hashes",
+        "Phase A claim/observation/conflict UIDs as applicable"
+      ]
+    },
+    {
+      "rule_id": "thermal.water_balance",
+      "version": "1.0.0",
+      "applicability": "Explicit steady-state sensible-water check on one documented asset",
+      "required_inputs": [
+        "equipment_id",
+        "inlet/outlet/flow/power points",
+        "accepted ownership",
+        "water density and cp with units",
+        "window",
+        "cadence",
+        "tolerance",
+        "min_samples"
+      ],
+      "unit_dimensions": {
+        "inlet/outlet": "absolute K",
+        "flow": "m3/s",
+        "thermal power": "W signed into fluid",
+        "density": "kg/m3",
+        "specific_heat": "J/(kg*K)"
+      },
+      "time_prerequisites": [
+        "exact aligned UTC samples",
+        "inclusive full window",
+        "at least two samples",
+        "explicit cadence and max gap",
+        "all measurements quality good"
+      ],
+      "operating_prerequisites": [
+        "every in-window sample explicitly running",
+        "steady_state_sensible_water assumption supplied",
+        "heating/cooling sign supplied"
+      ],
+      "outcomes": [
+        "pass",
+        "fail",
+        "not_evaluable",
+        "blocked",
+        "error"
+      ],
+      "reason_codes": [
+        "ACCEPTED_OWNERSHIP_REQUIRED",
+        "AMBIGUOUS_LOCAL_TIME",
+        "DOCUMENTED_ROLE_OR_OWNERSHIP_MISMATCH",
+        "DUPLICATE_TIMESTAMP",
+        "EQUIPMENT_IDENTITY_UNRESOLVED",
+        "EQUIPMENT_NOT_RUNNING_OR_UNKNOWN",
+        "HEATING_COOLING_SIGN_MISMATCH",
+        "INCOMPLETE_WINDOW_COVERAGE",
+        "INSUFFICIENT_FLOW_SAMPLES",
+        "INSUFFICIENT_INLET_SAMPLES",
+        "INSUFFICIENT_OUTLET_SAMPLES",
+        "INSUFFICIENT_POWER_SAMPLES",
+        "INVALID_FLUID_PROPERTIES",
+        "INVALID_MEASUREMENT",
+        "INVALID_OR_MISSING_WINDOW_CONFIGURATION",
+        "INVALID_SOURCE_RECORD",
+        "INVALID_TIMESTAMP",
+        "INVALID_TIMEZONE",
+        "IRREGULAR_SAMPLE_CADENCE",
+        "MEASUREMENT_EQUIPMENT_MISMATCH",
+        "MEASUREMENT_GAP",
+        "MISSING_OR_AMBIGUOUS_FLOW_POINT",
+        "MISSING_OR_AMBIGUOUS_INLET_POINT",
+        "MISSING_OR_AMBIGUOUS_OUTLET_POINT",
+        "MISSING_OR_AMBIGUOUS_POWER_POINT",
+        "MISSING_OR_INVALID_DENSITY",
+        "MISSING_OR_INVALID_SPECIFIC_HEAT",
+        "MISSING_TIMESTAMP",
+        "MISSING_TIMEZONE",
+        "MODE_NOT_ESTABLISHED",
+        "NO_THERMAL_CHECK_CONFIGURATION",
+        "PHYSICALLY_INVALID_MEASUREMENT",
+        "THERMAL_APPLICABILITY_NOT_ESTABLISHED",
+        "THERMAL_BALANCE_WITHIN_TOLERANCE",
+        "THERMAL_POWER_OUTSIDE_TOLERANCE",
+        "TIMEZONE_OFFSET_MISMATCH",
+        "UNALIGNED_TIMESTAMPS",
+        "THERMAL_POWER_SENSOR_REQUIRED",
+        "NONFINITE_CALCULATION"
+      ],
+      "severity": "review",
+      "evidence_references": [
+        "source record IDs/UIDs and original file hashes",
+        "Phase A claim/observation/conflict UIDs as applicable"
+      ]
+    }
+  ]
+}

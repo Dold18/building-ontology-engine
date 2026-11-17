@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+.venv/
+*.py[cod]
+*.egg-info/
+output/
+outputs/
+*.log
+.DS_Store
+NOT_PUBLIC_READY.txt
+EXPORT_MANIFEST.txt
+*_PRIVATE_AUDIT.txt
+*gitleaks*report*.json

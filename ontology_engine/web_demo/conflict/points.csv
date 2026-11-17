@@ -1,0 +1,4 @@
+point_id,description,equipment_id,units,controller_id,channel_id,correlation_with
+opaque:41,Analog input,,degC,DDC-41,A1,
+left.press,Pressure Reading,Terminal.Left,Pa,,,
+West.TREND,Trend channel,Hydronic-aux,degC,,,AHU/West

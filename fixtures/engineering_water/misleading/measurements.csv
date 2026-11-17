@@ -1,0 +1,13 @@
+measurement_id,point_id,equipment_id,quantity_kind,value,units,timestamp,quality,operating_state,unsigned_flow
+inlet0,inlet-A,HX-A,temperature,20,degC,2026-01-01T12:00:00+00:00,good,running,true
+inlet1,inlet-A,HX-A,temperature,20,degC,2026-01-01T12:01:00+00:00,good,running,true
+inlet2,inlet-A,HX-A,temperature,20,degC,2026-01-01T12:02:00+00:00,good,running,true
+outlet0,outlet-A,HX-A,temperature,30,degC,2026-01-01T12:00:00+00:00,good,running,true
+outlet1,outlet-A,HX-A,temperature,30,degC,2026-01-01T12:01:00+00:00,good,running,true
+outlet2,outlet-A,HX-A,temperature,30,degC,2026-01-01T12:02:00+00:00,good,running,true
+flow0,flow-A,HX-A,volume_flow,1,L/s,2026-01-01T12:00:00+00:00,good,running,true
+flow1,flow-A,HX-A,volume_flow,1,L/s,2026-01-01T12:01:00+00:00,good,running,true
+flow2,flow-A,HX-A,volume_flow,1,L/s,2026-01-01T12:02:00+00:00,good,running,true
+power0,power-A,HX-A,power,1,kW,2026-01-01T12:00:00+00:00,good,running,true
+power1,power-A,HX-A,power,1,kW,2026-01-01T12:01:00+00:00,good,running,true
+power2,power-A,HX-A,power,1,kW,2026-01-01T12:02:00+00:00,good,running,true

@@ -1,0 +1,6 @@
+point_id,equipment_id,point_class,quantity_kind,units,measurement_role
+C7.tin,HX.C7,Temperature_Sensor,temperature,degC,inlet
+C7.tout,HX.C7,Temperature_Sensor,temperature,degC,outlet
+C7.flow,HX.C7,Water_Flow_Sensor,volume_flow,L/s,flow
+C7.heat,HX.C7,Thermal_Power_Sensor,power,kW,power
+P2.temp,Loop.P2,Temperature_Sensor,temperature,degC,

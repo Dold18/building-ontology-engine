@@ -1,0 +1,3 @@
+connection_id,from_equipment,to_equipment,predicate,medium,source_description
+up,PUMP-B,HX-A,feeds,water,SYNTHETIC mechanical schedule
+down,HX-A,LOAD-C,feeds,water,SYNTHETIC mechanical schedule

@@ -1,0 +1,61 @@
+{
+  "versions": {
+    "canonical_records": "canonical-v3",
+    "normalizer": "normalizer-v4",
+    "exporter": "exporter-v6",
+    "identity": "identity-v2",
+    "evidence": "evidence-v1",
+    "engineering": "engineering-v1",
+    "engineering_policy": "engineering-screen-v1",
+    "retrieval": "retrieval-v1",
+    "context_proposals": "context-proposals-v1",
+    "coverage": "inference-coverage-v1",
+    "candidate_schema": "candidate-ledgers-v1",
+    "claim_disposition": "claim-disposition-v1",
+    "csv_encoding": "apostrophe-text-v1",
+    "brick": "1.4.4"
+  },
+  "schemas": {
+    "SourceRecord": "db4b69f96c41520e4a50c0fe2f3db3cae0310fd190646e074802017eea104f3e",
+    "Assertion": "2099f6ab2fcb0962f8aaf67b179a09ef84b56bce67fef0bc1ad2a7a3a9a02216",
+    "Classification": "f3e157c17afe756504a806d25f74ddb38ccb48e8c4e62af7f8b2418a3ef8e4a2",
+    "Issue": "de6ce8942a1e21cd807a6c0cc0ed31035a2cbfa928521d8b33cde823376bc414",
+    "ReviewItem": "24b89449f59b93d7fb7afc440088d73e2935dfe50260c2b278cafc171f6755b9",
+    "Proposals": "0b277443e5180cb4854b0efad69970f5e65dd6cb2127bca4935fae22e98ba759",
+    "RunManifest": "4437347b849aa67fb30b9fffbb19a5cf8b246208b1c61838f42360b7483b9a0e",
+    "CandidateObservation": "47116e6f1e60cec4fa11aec2eb4fbc0564ded2f305d5f54e06bc662403bb8cf1",
+    "CandidateClaim": "738ba02b91326d1592b5a8f5a53140fff03d09712858a43c844a840bbdf3be3a",
+    "ClaimConflict": "28e85df965370ec67ce1f5382cb1a5ffe5e12bba4190cc9e4657b93f1a5a0c63",
+    "CandidateBundle": "fa29bb0f4bd6c87a4b8e7e65e7b65bfee2ed47af5c6e96c14a189d9b9a6338b6",
+    "RuleDefinition": "83bc435ad64f2e81c8a5f7d75ee913ad5d0d0733e27ba30112921ace0de6a36f",
+    "RuleResult": "5d8fb8f2633b851c1fab142c322f5d4e02c96b6f4a3dd326f612d240c5eb9341",
+    "EngineeringLedger": "cc20b67d5707749673b7d9e45382e2624e491b1c3c9bde5cb89bc4cc03ca6c72",
+    "RetrievalPlan": "31e56d76e1977016f60836b6429f9b37902f7dc80a63ae64f1785444453451d6",
+    "ContextBatch": "02568f1bbed07719b29dc42605c4ddcc7874993f8c6c87c4ed78b9670bac0de5",
+    "RetrievedRecord": "3c36ac7ea9e01579d42f419676f114d383e6a0c1e9c1ca7d8c56cfb81fbff95c",
+    "ContextCandidate": "e9f2a9c03abcbafc981c277edb01b089d1496ba892586a5a32cf897aedc74922",
+    "ContextAbstention": "e3d8bc0c2c3ea27d70d80db3267287f109bdbb6762b2b8d4e00dbff36ec4faf2",
+    "ContextResponse": "049084d814ea1537978fe625fd4dfb2563466919f3098dd0c30a4b5c8ef1cc98",
+    "Limits": "864e95db2ea044c3c20f2f7d1dcf5ffb5f8cf25fdcc6521305b5d21a1f623604",
+    "InputConfig": "817c3d93d81f39bded135b2a8a6928b760e294266a8437219c63667b34960e29"
+  },
+  "resources": {
+    "Brick-1.4.4.ttl": "b65720b7b9b64c646745c689777e6138c0d59ce0088df0aeb78fbd444d04d8e7",
+    "Brick-LICENSE.txt": "3f4d165cc1c2b234d4bca6462971cb318ef525961cc688b3280a96b2fde932af",
+    "evaluation-input.schema.json": "ff6ac35396c1c1a2bc9d8a8d2a2a9afda21432f60ee23f663de5b8dd65cd7b3e",
+    "evaluation-output.schema.json": "b1c1871be8fd346f8b8694498982a69f779929eb277e0c0152e21df7ed618d57",
+    "engineering-rules-v1.json": "0c3a972a9e8791585e35b6e289433d70bd94e16aa26b5f120177f692dd87daed"
+  },
+  "source": "https://github.com/BrickSchema/Brick/releases/tag/v1.4.4",
+  "ontology_url": "https://github.com/BrickSchema/Brick/releases/download/v1.4.4/Brick.ttl",
+  "license_url": "https://raw.githubusercontent.com/BrickSchema/Brick/v1.4.4/LICENSE",
+  "license": "BSD-3-Clause; bundled integrations retain embedded attribution",
+  "retrieved": "2026-10-28",
+  "shapes": "embedded in unmodified release Brick.ttl",
+  "class_aliases": {
+    "Supply_Fan_Status": "Fan_Status",
+    "Electrical_Power_Sensor": "Electric_Power_Sensor",
+    "Electrical_Energy_Sensor": "Electric_Energy_Sensor"
+  },
+  "migration_authority": "Owner authorization in TASK_002-R continuation; legacy source values retained, canonical released classes exported"
+}

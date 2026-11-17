@@ -1,0 +1,7 @@
+point_id,description,point_class,equipment_id,units,ownership_scope,ownership_exclusive
+MIXED-CHANNEL,Pressure Reading,Temperature_Sensor,PLANT-A,,,
+POWER-CHANNEL,Electric power,Electrical_Power_Sensor,PLANT-A,kW,,
+BAD-UNIT,Pressure Reading,Pressure_Sensor,PUMP-B,degC,,
+UNKNOWN-CHANNEL,Unfamiliar signal,,,,,
+DUPLICATE-CHANNEL,,,PLANT-A,,single-channel,true
+DUPLICATE-CHANNEL,,,PUMP-B,,single-channel,true

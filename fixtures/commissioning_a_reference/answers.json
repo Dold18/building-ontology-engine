@@ -1,0 +1,44 @@
+{
+  "label": "SYNTHETIC / FOR TESTING ONLY",
+  "split": "developer-authored development, not independent or sealed labels",
+  "cases": {
+    "metadata": {
+      "required_rules": [
+        "source.identifier",
+        "source.duplicate",
+        "source.parse",
+        "metadata.equipment",
+        "metadata.sensor",
+        "metadata.ownership",
+        "engineering.measurement.dimension",
+        "operational.telemetry"
+      ],
+      "potential_operational_issue_count": 0
+    },
+    "conflicting_documents": {
+      "required_rules": [
+        "candidate.conflict",
+        "engineering.topology.evidence"
+      ],
+      "conflict_kind": "flow_direction",
+      "potential_operational_issue_count": 0
+    },
+    "no_telemetry": {
+      "required_rules": [
+        "operational.telemetry",
+        "engineering.thermal.water_balance"
+      ],
+      "potential_operational_issue_count": 0
+    },
+    "screening": {
+      "required_rules": [
+        "engineering.thermal.water_balance",
+        "engineering.measurement.range"
+      ],
+      "thermal_outcome": "fail",
+      "potential_operational_issue_count": 1,
+      "expected_thermal_power_W": 25065.768,
+      "measured_thermal_power_W": 12000
+    }
+  }
+}

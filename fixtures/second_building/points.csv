@@ -1,0 +1,3 @@
+point_id,description,equipment_id,units,point_class
+loop-pressure,Documented differential pressure,HYD-9,kPa,Differential_Pressure_Sensor
+unresolved-tag,Unclear exported label,,,

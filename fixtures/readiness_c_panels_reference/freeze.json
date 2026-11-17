@@ -1,0 +1,25 @@
+{
+  "label": "SYNTHETIC / FOR TESTING ONLY",
+  "sha256": {
+    "fixtures/readiness_c_panels/complete/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c_panels/complete/connections.csv": "d9421b30be3c31c6d574830e4502926f26777e09fb3044a9f413d930dde4bd12",
+    "fixtures/readiness_c_panels/complete/equipment.csv": "059dc1a5a319ddbdbd5974e935385184e60b76eb26da5716c8a73107b97c2ca9",
+    "fixtures/readiness_c_panels/complete/measurements.csv": "92524a27e7f9a53ad461da9a04d76c85b27e84051d09ccd5ab5f547dbab899ad",
+    "fixtures/readiness_c_panels/complete/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c_panels/complete/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_panels/conflicted/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c_panels/conflicted/connections.csv": "dd2c0cadc78948a027c713819b08840ca8819aafb09641a64fc7cadefa9e24eb",
+    "fixtures/readiness_c_panels/conflicted/equipment.csv": "059dc1a5a319ddbdbd5974e935385184e60b76eb26da5716c8a73107b97c2ca9",
+    "fixtures/readiness_c_panels/conflicted/measurements.csv": "92524a27e7f9a53ad461da9a04d76c85b27e84051d09ccd5ab5f547dbab899ad",
+    "fixtures/readiness_c_panels/conflicted/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c_panels/conflicted/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_panels/missing/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c_panels/missing/connections.csv": "d9421b30be3c31c6d574830e4502926f26777e09fb3044a9f413d930dde4bd12",
+    "fixtures/readiness_c_panels/missing/equipment.csv": "059dc1a5a319ddbdbd5974e935385184e60b76eb26da5716c8a73107b97c2ca9",
+    "fixtures/readiness_c_panels/missing/measurements.csv": "fe8e7f5a5b8e4ece85d9aea18b5ce7ca733155c60cb3345c50ac5cfbb101d582",
+    "fixtures/readiness_c_panels/missing/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c_panels/missing/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_panels_reference/expectations.md": "eb443ab198f8db791cbfa9480019ec45b71d71d7caa3ab199dfe08815f5b3a51"
+  },
+  "supersedes": "component draft positive meter-to-HX expectation only; original bytes retained"
+}

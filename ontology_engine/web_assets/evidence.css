@@ -1,0 +1,48 @@
+/* UX-H: non-inferential graph relationship register and explicit evidence trace */
+.evidence-register{margin:16px 0;padding:20px 23px;max-width:none;min-width:0}
+.evidence-register-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:14px}
+.evidence-register-head h2{font-size:19px;margin:5px 0 8px}
+.evidence-register-head .muted{font-size:12px;margin:0}
+.evidence-register-controls{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin:16px 0}
+.evidence-register-controls label{display:grid;gap:6px;color:#6a8290;font-size:12px;font-weight:650;min-width:190px}
+.evidence-register-controls select{min-height:40px}
+.evidence-table-scroll{width:100%;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;border:1px solid #e2ebef;border-radius:9px}
+.evidence-table{width:100%;border-collapse:collapse;text-align:left;font-size:12px;min-width:700px}
+.evidence-table th{padding:12px;background:#f4f8f9;color:#5b7786;font-size:11px;font-weight:750;border-bottom:1px solid #d9e7eb}
+.evidence-table td{padding:12px;vertical-align:middle;border-bottom:1px solid #edf2f3;overflow-wrap:anywhere;max-width:230px}
+.evidence-table tr:last-child td{border-bottom:0}
+.evidence-table tbody tr:hover{background:#f6fbfa}
+.evidence-table tbody tr.evidence-selected{background:#e7f4f2;outline:2px solid #3d9e92;outline-offset:-2px}
+.evidence-inspect-action{min-height:40px;white-space:nowrap}
+.evidence-register-note{margin-top:12px}
+.evidence-trail{border-top:1px solid #dce6e9;margin-top:20px;padding-top:18px}
+.evidence-trail>h3{font-size:15px;letter-spacing:-.2px;margin-bottom:7px}
+.evidence-trail>p{line-height:1.5}
+.evidence-chain{border:1px solid #d8e6e8;border-radius:11px;padding:13px 12px;margin:15px 0;background:#f8fbfb;min-width:0}
+.evidence-chain-head{display:flex;align-items:start;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.evidence-chain-head strong{font-size:12px;line-height:1.5;overflow-wrap:anywhere;flex:1}
+.evidence-chain>.small{margin:10px 0}
+.evidence-id{display:block;color:#698691;font:10px ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.5;overflow-wrap:anywhere;margin:6px 0}
+.evidence-observation{border-left:2px solid #56a59a;padding:10px 0 10px 12px;margin:9px 0 0;min-width:0}
+.evidence-source{border:1px solid #dce7eb;border-radius:9px;background:white;padding:12px;margin:10px 0;min-width:0}
+.evidence-source-head{display:flex;align-items:start;justify-content:space-between;gap:9px;flex-wrap:wrap}
+.evidence-source-head strong{font-size:12px;overflow-wrap:anywhere;flex:1}
+.evidence-source-state{font-size:10px;color:#3a7371;border-radius:6px;border:1px solid #bee0d8;padding:4px 6px}
+.evidence-source-error{color:#9b473f;border-color:#eac8c4}
+.evidence-caveat{color:#856324;background:#fff7e3;border-left:3px solid #d9ac52;padding:8px 10px;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+.evidence-original{margin-top:10px}
+.evidence-original summary{cursor:pointer;font-size:11px;color:#126e71;font-weight:700;padding:5px 0}
+.evidence-original h5{margin:12px 0 5px;font-size:10px}
+.evidence-original pre{font:11px ui-monospace,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f5f6;max-height:200px;overflow:auto;border-radius:7px;padding:10px}
+.evidence-parse-warnings{padding:10px 10px 10px 25px;color:#8e493c;background:#fff0ed;border-radius:7px;font-size:11px}
+.evidence-trail-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.workspace-dark .evidence-register,.workspace-dark .evidence-chain,.workspace-dark .evidence-source{background:#1c3540;color:#e8f1f4;border-color:#45616a}
+.workspace-dark .evidence-table-scroll{border-color:#47636d}
+.workspace-dark .evidence-table th{background:#27424c;color:#d4e3e7;border-color:#45616a}
+.workspace-dark .evidence-table td{border-color:#37515c}
+.workspace-dark .evidence-table tbody tr:hover{background:#264751}
+.workspace-dark .evidence-table tbody tr.evidence-selected{background:#2a554f;outline-color:#79afa6}
+.workspace-dark .evidence-original pre{background:#2a4550;color:#e6eff1}
+.workspace-dark .evidence-caveat{background:#4c402a;color:#efdfb8}
+@media(max-width:750px){.evidence-register{padding:15px}.evidence-register-head{flex-direction:column}.evidence-register-controls{display:grid;grid-template-columns:1fr}.evidence-register-controls label{min-width:0}.evidence-inspect-action{min-height:44px}.evidence-source{padding:10px}}
+@media(prefers-reduced-motion:reduce){.evidence-register *{scroll-behavior:auto!important}}

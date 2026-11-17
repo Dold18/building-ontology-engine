@@ -1,0 +1,134 @@
+
+/* UX-E workspace: progressive disclosure on top of existing trusted API. */
+.workspace-hero{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px 32px;margin-bottom:18px;background:linear-gradient(115deg,#fff 25%,#edf6f4 100%);overflow:hidden}
+.workspace-hero h2{font-size:24px;letter-spacing:-.6px;margin:8px 0 12px}
+.workspace-hero .muted{max-width:580px}
+.workspace-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hero-graphic{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.hero-graphic span{font-size:10px;letter-spacing:1px;padding:18px 12px;background:white;border:1px solid #c9dedc;border-radius:12px;font-weight:800;color:#337770}
+.hero-graphic i{font-style:normal;color:#639a95}
+.workspace-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+.workspace-columns .panel{min-width:0}
+.workspace-panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 14px}
+.workspace-panel-head h2{margin:0}
+.status-summary{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #e6edef;gap:15px}
+.status-summary:last-child{border-bottom:0}
+.status-summary strong{font-variant-numeric:tabular-nums}
+.work-item{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #e6edef;padding:14px 0}
+.work-item:last-child{border-bottom:0}
+.work-item strong{display:block;font-size:13px;overflow-wrap:anywhere}
+.work-item p{margin:4px 0 0}
+.work-item button{flex:none}
+.finding-card{padding:16px 0;border-bottom:1px solid #e6edef}
+.finding-card:last-child{border-bottom:0}
+.finding-card strong{display:block;font-size:13px;overflow-wrap:anywhere}
+.finding-card p{margin:7px 0 0;overflow-wrap:anywhere}
+.workspace-help,.readiness-state{padding:12px 16px;margin-top:15px;border:1px solid #e0e9ed;border-radius:11px;background:#f8fafb;color:#607787;font-size:12px}
+.readiness-state{margin-bottom:15px;background:#f3f6f8}
+.facts-row{display:flex;flex-wrap:wrap;gap:18px}
+.fact{min-width:120px;display:grid;gap:5px}
+.fact strong{font-size:24px;letter-spacing:-.6px}
+.fact span{font-size:12px;color:#728694}
+.tour-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tour-steps .panel{min-width:0}
+.tour-steps .panel p{min-height:100px}
+.tour-number{display:grid;place-items:center;background:#e8f4f2;color:#227971;border-radius:10px;width:40px;height:40px;font-size:13px;font-weight:800;margin-bottom:15px}
+.workspace-review-queue{margin-bottom:18px}
+.mapping-assistant{padding:16px;border:1px solid #dae7e8;background:#f6faf9;border-radius:12px;margin:14px 0}
+.mapping-assistant>p{margin:8px 0}
+.mapping-file{border-top:1px solid #d6e5e5;padding:15px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.mapping-file>strong{grid-column:1/-1;overflow-wrap:anywhere}
+.mapping-label{font-size:11px;color:#647a88;display:grid;gap:5px}
+.mapping-label select{width:100%;padding:8px}
+.command-dialog{width:min(580px,calc(100vw - 30px));max-height:80vh;border:1px solid #d4e2e7;border-radius:16px;box-shadow:0 25px 90px #09202e40;padding:22px;background:#fff;color:#173342}
+.command-dialog::backdrop{background:#0c213080;backdrop-filter:blur(3px)}
+.command-dialog form{margin:0}
+.command-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.command-title h2{margin:0 0 12px}
+.command-dialog input{width:100%;margin:0 0 10px}
+.command-results{display:grid;gap:5px;max-height:350px;overflow:auto}
+.command-result{background:#f7fafb;border:1px solid #e2ebee;border-radius:9px;text-align:left;padding:11px 13px;color:#304c5b}
+.command-result:hover,.command-result:focus-visible{background:#e5f3f1;border-color:#80b8b0}
+.workspace-dark{color-scheme:dark}
+.workspace-dark body{background:#10202a;color:#e4ebef}
+.workspace-dark .main,.workspace-dark main{background:#10202a}
+.workspace-dark .topbar,.workspace-dark .panel,.workspace-dark .metric,.workspace-dark .command-dialog{background:#1a303b;color:#ebf3f5;border-color:#3b5560}
+.workspace-dark .workspace-hero{background:linear-gradient(110deg,#1a303b,#1a4545)}
+.workspace-dark .hero-graphic span,.workspace-dark .workspace-help,.workspace-dark .readiness-state,.workspace-dark .mapping-assistant,.workspace-dark .command-result{background:#223b46;color:#e6eef1;border-color:#45616b}
+.workspace-dark input,.workspace-dark select,.workspace-dark textarea,.workspace-dark .secondary,.workspace-dark .ghost{background:#203642;color:#f0f5f5;border-color:#45616b}
+.workspace-dark .muted,.workspace-dark .small{color:#b0c5cc}
+.workspace-dark .status-summary,.workspace-dark .work-item,.workspace-dark .finding-card{border-color:#36515c}
+@media(max-width:1080px){.hero-graphic{display:none}.tour-steps{grid-template-columns:1fr}.tour-steps .panel p{min-height:0}}
+@media(max-width:760px){.workspace-columns{grid-template-columns:1fr}.workspace-hero{padding:20px}.mapping-file{grid-template-columns:repeat(2,minmax(0,1fr))}.work-item{align-items:flex-start;flex-wrap:wrap}}
+@media(max-width:470px){.mapping-file{grid-template-columns:1fr}.work-item button{width:100%}.facts-row{display:grid;grid-template-columns:1fr 1fr}}
+
+/* Cross-device UX: iOS Safari / Android Chrome / desktop Blink, WebKit and Gecko. */
+html{min-width:320px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:hidden}
+button,a,input,select,textarea{touch-action:manipulation}
+button,input,select,textarea{max-width:100%}
+#shell,.main,main,.page,.panel{min-width:0}
+.page{overflow-wrap:anywhere}
+.graph-panel,.graph-layout,.canvas-wrap{min-width:0}
+.canvas-wrap{overscroll-behavior:contain}
+#graph{touch-action:none;user-select:none;-webkit-user-select:none}
+.command-dialog{max-width:min(580px,calc(100vw - 24px));max-height:min(80vh,80dvh)}
+.command-dialog input{font-size:16px}
+.command-results{overscroll-behavior:contain}
+#mappingPreview,.source-card,.detail-row,.status-summary{min-width:0}
+#mappingPreview select{max-width:100%;font-size:16px}
+input[type="file"]{min-width:0;max-width:100%}
+.nav,.primary,.secondary,.ghost,.command-result{min-height:40px}
+@media(hover:none) and (pointer:coarse){
+  .nav,.primary,.secondary,.ghost,.command-result,.claim-button,.asset-row{min-height:44px}
+  .graph-footer button,.tools button,.tab{min-height:44px;min-width:44px}
+  .nav{touch-action:pan-x}
+  input,select,textarea{font-size:16px}
+}
+@media(max-width:750px){
+  #shell{display:flex;flex-direction:column}
+  .sidebar{position:relative;width:100%;height:auto;min-height:0}
+  .sidebar nav{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+  .sidebar nav .nav{flex:0 0 auto}
+  .main{width:100%}
+  .topbar{align-items:stretch}
+  .top-controls{width:100%;min-width:0}
+  .top-controls select{max-width:none;flex:1 1 180px}
+  .page-head{gap:10px}
+  .workspace-hero{display:block}
+  .graph-layout{grid-template-columns:minmax(0,1fr)}
+  .filters,.toolbar{flex-wrap:wrap}
+  .inspector{max-height:none}
+  #graph{width:100%;height:360px}
+  .workspace-columns{grid-template-columns:minmax(0,1fr)}
+  .tour-steps{grid-template-columns:minmax(0,1fr)}
+  .text-panel{padding:20px}
+}
+@media(max-width:420px){
+  main{padding:14px 10px 28px}
+  .topbar{padding:12px 10px}
+  .notice{padding:9px 10px}
+  .workspace-hero{padding:18px}
+  .workspace-hero h2{font-size:20px}
+  .kpis{gap:8px}
+  .metric{padding:12px}
+  .metric strong{font-size:22px}
+  .graph-footer{gap:8px;flex-wrap:wrap}
+  .command-dialog{padding:14px}
+  .mapping-file{grid-template-columns:minmax(0,1fr)}
+  .work-item{display:grid;grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+@media(forced-colors:active){
+  .primary,.pill,.status-chip{border:1px solid ButtonText}
+  .edge{stroke:CanvasText}
+  .node rect,.node circle{stroke:CanvasText}
+}
+@media print{
+  .sidebar,.topbar,.notice,.command-dialog,.workspace-actions,.primary,.secondary,.ghost{display:none!important}
+  #shell{display:block}
+  .page:not([hidden]){display:block}
+  .panel{box-shadow:none}
+}

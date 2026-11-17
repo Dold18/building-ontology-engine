@@ -1,0 +1,4 @@
+connection_id,from_equipment,to_equipment,predicate,medium,connection_scope,direction_exclusive,medium_exclusive,source_description
+branch-L,AHU/West,Terminal.Left,feeds,air,duct-west-L,true,true,SYNTHETIC independent duct schedule D-01
+branch-R,AHU/West,Terminal.Right,feeds,air,duct-west-R,true,true,SYNTHETIC independent duct schedule D-01
+reverse-L,Terminal.Left,AHU/West,feeds,air,duct-west-L,true,true,SYNTHETIC conflicting revision D-02; not physical truth

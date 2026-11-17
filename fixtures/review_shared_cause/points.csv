@@ -1,0 +1,7 @@
+point_id,description,equipment_id,units,point_class,naming_hint,review_cause_id,review_cause_kind,documented_point_class
+XQ.01,Unresolved analog channel,Supply.A,degC,unknown,XQ,channel-schedule-7,naming_prefix,Supply_Air_Temperature_Sensor
+XQ.02,Unresolved analog channel,Supply.A,degC,unknown,XQ,channel-schedule-7,naming_prefix,Supply_Air_Temperature_Sensor
+XQ.03,Unresolved analog channel,Supply.A,degC,unknown,XQ,channel-schedule-7,naming_prefix,Supply_Air_Temperature_Sensor
+XQ.04,Unresolved analog channel,Supply.A,degC,unknown,XQ,channel-schedule-7,naming_prefix,Supply_Air_Temperature_Sensor
+XQ.05,Unresolved analog channel,Supply.A,degC,unknown,XQ,channel-schedule-7,naming_prefix,Supply_Air_Temperature_Sensor
+Independent.SAT,Supply air temperature,Terminal.B,degC,Supply_Air_Temperature_Sensor,,,,

@@ -1,0 +1,24 @@
+{
+  "label": "SYNTHETIC / FOR TESTING ONLY",
+  "sha256": {
+    "fixtures/readiness_c/complete/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c/complete/connections.csv": "3438a46c4ad63bcb97317489c73e98fdc8ccfa46270c94c8a5c1b62b99baa611",
+    "fixtures/readiness_c/complete/equipment.csv": "6cdd6d13a3f53760cfe9a33bebf61e5f4438d29d4ba0ccaa8cf9842ab9489e85",
+    "fixtures/readiness_c/complete/measurements.csv": "92524a27e7f9a53ad461da9a04d76c85b27e84051d09ccd5ab5f547dbab899ad",
+    "fixtures/readiness_c/complete/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c/complete/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c/conflicted/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c/conflicted/connections.csv": "b467c1375834f72139d4041e1384a91154917e1c7ffc72d9de6da7e3ee884076",
+    "fixtures/readiness_c/conflicted/equipment.csv": "6cdd6d13a3f53760cfe9a33bebf61e5f4438d29d4ba0ccaa8cf9842ab9489e85",
+    "fixtures/readiness_c/conflicted/measurements.csv": "92524a27e7f9a53ad461da9a04d76c85b27e84051d09ccd5ab5f547dbab899ad",
+    "fixtures/readiness_c/conflicted/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c/conflicted/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c/missing/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c/missing/connections.csv": "3438a46c4ad63bcb97317489c73e98fdc8ccfa46270c94c8a5c1b62b99baa611",
+    "fixtures/readiness_c/missing/equipment.csv": "6cdd6d13a3f53760cfe9a33bebf61e5f4438d29d4ba0ccaa8cf9842ab9489e85",
+    "fixtures/readiness_c/missing/measurements.csv": "fe8e7f5a5b8e4ece85d9aea18b5ce7ca733155c60cb3345c50ac5cfbb101d582",
+    "fixtures/readiness_c/missing/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c/missing/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_reference/expectations.md": "9d6697dace5c0ee045b3fe0fb86652f9fb9b579b56902fd57c890631701c712e"
+  }
+}

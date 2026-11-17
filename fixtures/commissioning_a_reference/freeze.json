@@ -1,0 +1,22 @@
+{
+  "label": "SYNTHETIC / FOR TESTING ONLY",
+  "phase": "TASK_005 A",
+  "sha256": {
+    "fixtures/commissioning_a/conflicting_documents/SYNTHETIC.txt": "e5cbd907546001a440c9a3b76fb3efa2991e6482990e7a8da53c7f60a56c61d3",
+    "fixtures/commissioning_a/conflicting_documents/connections.csv": "2d69c7bacc2fe0702f8226150fb44042b6d360f4940fc930641732782b2676f1",
+    "fixtures/commissioning_a/conflicting_documents/equipment.csv": "2affae84454bd68fd5a0ddb7f38d8b9ec9ce770a276182c495b725bb022efe23",
+    "fixtures/commissioning_a/conflicting_documents/points.csv": "d3e2bd4db6b1b3222a762426677ad747b76318e8428236a78b0a496387fca049",
+    "fixtures/commissioning_a/metadata/SYNTHETIC.txt": "e5cbd907546001a440c9a3b76fb3efa2991e6482990e7a8da53c7f60a56c61d3",
+    "fixtures/commissioning_a/metadata/equipment.csv": "74c8a9e9e3618b7fa079720b7cc02e5f29dd54999b45f60a341655332b403223",
+    "fixtures/commissioning_a/metadata/points.csv": "5174a4a28b3efbb3ed7dd0699213a6d0c647b088d921c9d6767b0f33b61b172e",
+    "fixtures/commissioning_a/no_telemetry/SYNTHETIC.txt": "e5cbd907546001a440c9a3b76fb3efa2991e6482990e7a8da53c7f60a56c61d3",
+    "fixtures/commissioning_a/no_telemetry/equipment.csv": "5c5504a53d9ba5596f7bc3e345c8a6371d8b9f8564e0d4ff19c84ea9013d3bad",
+    "fixtures/commissioning_a/no_telemetry/points.csv": "54174310a48351162ed4d45c89656b189160a2dbf0694d2983378822746f131b",
+    "fixtures/commissioning_a/screening/SYNTHETIC.txt": "e5cbd907546001a440c9a3b76fb3efa2991e6482990e7a8da53c7f60a56c61d3",
+    "fixtures/commissioning_a/screening/equipment.csv": "075285c90417f40ea24aeab3098ac35e16069fe7cf584ffb01d5a3b428fcaddf",
+    "fixtures/commissioning_a/screening/measurements.csv": "d47daa45c5843da425fef517da3eefba016eaa272cbbbdfb50b1ddcac59a0d10",
+    "fixtures/commissioning_a/screening/points.csv": "d3437d244e7199599310a6884242124aef3e73d937c254d98b3fc3aeac41251b",
+    "fixtures/commissioning_a/screening/thermal_checks.csv": "4fe32ade6a6b7b78b0ac7a68c6243e4eef7c97f557c5774a75eda3ce61c89bac",
+    "fixtures/commissioning_a_reference/answers.json": "b111054f17e8c9328abee9aac1cac5c1576cacd0d2d55631f5f49ccb0eaed334"
+  }
+}

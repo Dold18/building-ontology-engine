@@ -1,0 +1,161 @@
+{
+  "$defs": {
+    "LabeledEdge": {
+      "additionalProperties": false,
+      "properties": {
+        "building_id": {
+          "title": "Building Id",
+          "type": "string"
+        },
+        "subject_id": {
+          "title": "Subject Id",
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "feeds",
+            "isFedBy",
+            "hasPoint",
+            "isPointOf",
+            "hasPart",
+            "isPartOf",
+            "type"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "object_id": {
+          "title": "Object Id",
+          "type": "string"
+        },
+        "label": {
+          "enum": [
+            "true",
+            "false",
+            "unknown"
+          ],
+          "title": "Label",
+          "type": "string"
+        },
+        "label_source": {
+          "minLength": 1,
+          "title": "Label Source",
+          "type": "string"
+        },
+        "dataset_version": {
+          "minLength": 1,
+          "title": "Dataset Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "building_id",
+        "subject_id",
+        "predicate",
+        "object_id",
+        "label",
+        "label_source",
+        "dataset_version"
+      ],
+      "title": "LabeledEdge",
+      "type": "object"
+    },
+    "PredictedEdge": {
+      "additionalProperties": false,
+      "properties": {
+        "building_id": {
+          "title": "Building Id",
+          "type": "string"
+        },
+        "subject_id": {
+          "title": "Subject Id",
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "feeds",
+            "isFedBy",
+            "hasPoint",
+            "isPointOf",
+            "hasPart",
+            "isPartOf",
+            "type"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "object_id": {
+          "title": "Object Id",
+          "type": "string"
+        },
+        "disposition": {
+          "enum": [
+            "accepted",
+            "abstained"
+          ],
+          "title": "Disposition",
+          "type": "string"
+        }
+      },
+      "required": [
+        "building_id",
+        "subject_id",
+        "predicate",
+        "object_id",
+        "disposition"
+      ],
+      "title": "PredictedEdge",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "evaluation-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "scope": {
+      "enum": [
+        "synthetic-development",
+        "owner-independent"
+      ],
+      "title": "Scope",
+      "type": "string"
+    },
+    "dataset_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Dataset Sha256",
+      "type": "string"
+    },
+    "graph_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Graph Sha256",
+      "type": "string"
+    },
+    "labels": {
+      "items": {
+        "$ref": "#/$defs/LabeledEdge"
+      },
+      "title": "Labels",
+      "type": "array"
+    },
+    "predictions": {
+      "items": {
+        "$ref": "#/$defs/PredictedEdge"
+      },
+      "title": "Predictions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "dataset_sha256",
+    "graph_sha256",
+    "labels",
+    "predictions"
+  ],
+  "title": "EvaluationInput",
+  "type": "object"
+}

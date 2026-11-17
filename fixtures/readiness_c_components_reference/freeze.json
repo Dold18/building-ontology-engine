@@ -1,0 +1,25 @@
+{
+  "label": "SYNTHETIC / FOR TESTING ONLY",
+  "sha256": {
+    "fixtures/readiness_c_components/complete/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c_components/complete/connections.csv": "3d231c5ab992fb2ba8c52f7daa87bb0ff37d35dc1f1687841ccf7dbc5e5b3b67",
+    "fixtures/readiness_c_components/complete/equipment.csv": "6cdd6d13a3f53760cfe9a33bebf61e5f4438d29d4ba0ccaa8cf9842ab9489e85",
+    "fixtures/readiness_c_components/complete/measurements.csv": "92524a27e7f9a53ad461da9a04d76c85b27e84051d09ccd5ab5f547dbab899ad",
+    "fixtures/readiness_c_components/complete/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c_components/complete/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_components/conflicted/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c_components/conflicted/connections.csv": "d792bec40b502cc0e2b93230062e3a8582ba0a66c6d489e3c41d1b8b594d6039",
+    "fixtures/readiness_c_components/conflicted/equipment.csv": "6cdd6d13a3f53760cfe9a33bebf61e5f4438d29d4ba0ccaa8cf9842ab9489e85",
+    "fixtures/readiness_c_components/conflicted/measurements.csv": "92524a27e7f9a53ad461da9a04d76c85b27e84051d09ccd5ab5f547dbab899ad",
+    "fixtures/readiness_c_components/conflicted/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c_components/conflicted/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_components/missing/SYNTHETIC.txt": "6efc8e7625fe61dec766faeb40ab94da5dd47c6cbc29fbed1c26f396fd250532",
+    "fixtures/readiness_c_components/missing/connections.csv": "3d231c5ab992fb2ba8c52f7daa87bb0ff37d35dc1f1687841ccf7dbc5e5b3b67",
+    "fixtures/readiness_c_components/missing/equipment.csv": "6cdd6d13a3f53760cfe9a33bebf61e5f4438d29d4ba0ccaa8cf9842ab9489e85",
+    "fixtures/readiness_c_components/missing/measurements.csv": "fe8e7f5a5b8e4ece85d9aea18b5ce7ca733155c60cb3345c50ac5cfbb101d582",
+    "fixtures/readiness_c_components/missing/points.csv": "979f58c941facf70a7968f824f14826d3d4841d8d16bc26fdedfa0d0ea2ff74a",
+    "fixtures/readiness_c_components/missing/thermal_checks.csv": "b37f0b9a139f54bcdfff29553da625077d6f9abb9dff17db891e8b5b5e408c65",
+    "fixtures/readiness_c_components_reference/expectations.md": "ae48d316911fc5067e0b7448bf70d18ba89c653530f7b81033b3627aa3e40d1e"
+  },
+  "supersedes": "readiness_c reference meter-acceptance expectation only; original bytes preserved"
+}

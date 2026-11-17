@@ -1,0 +1,2 @@
+connection_id,from_equipment,to_equipment,predicate,medium,source_description
+duct-7,Supply.A,Terminal.B,feeds,air,SYNTHETIC supplied duct schedule

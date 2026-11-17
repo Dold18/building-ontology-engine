@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "mortar_bldg1",
+      "path": "mortar/bldg1.ttl",
+      "url": "https://brickschema.org/ttl/mortar/bldg1.ttl",
+      "kind": "reference_graph",
+      "license": "model-specific license unconfirmed; website repository MIT is separate evidence",
+      "license_source": "https://github.com/BrickSchema/brick-website/blob/master/LICENSE",
+      "origin": "public anonymized real-building reference model; not an original BMS export",
+      "sha256": "7595e8fd5181af6e42ba6a906635b2124c94a0b444e09efa276c2231b393e95e",
+      "bytes": 29439,
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "mortar_license_evidence",
+      "path": "mortar/WEBSITE_LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/BrickSchema/brick-website/master/LICENSE",
+      "kind": "license_evidence",
+      "license": "MIT (website repository)",
+      "origin": "repository license text, not confirmed per-model terms",
+      "sha256": "aa0a9b143007e08c29c491311610a13b870705a817b760dbca045688a731d6ef",
+      "bytes": 1062,
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "lbnl_chiller",
+      "path": "lbnl/chiller-model.zip",
+      "url": "https://fdddata.lbl.gov/data/Simulated_LBNL_FDD_Data_Sets_Chiller_Plant/LBNL_FDD_Data_Sets_Chiller_Plant_ttl.zip",
+      "kind": "reference_graph_archive",
+      "member": "LBNL_FDD_Data_Sets_chiller_plant.ttl",
+      "extracted_path": "lbnl/chiller.ttl",
+      "license": "CC BY 4.0 declared for release DOI 10.25984/1881324; no embedded per-file license",
+      "license_source": "https://catalog.data.gov/dataset/lbnl-fault-detection-and-diagnostics-datasets",
+      "origin": "public simulated EnergyPlus/Modelica chiller plant semantic model; not field BMS data",
+      "sha256": "19287cef4feddd71fdff69815fb80974a409e164d6559b7d2186c7b3f15b41ac",
+      "bytes": 1328,
+      "accessed": "2026-10-28",
+      "extracted_sha256": "de3a50a4cc1967618b881bee435376ccc4371784577ee76f370c5311fd6e7224",
+      "extracted_bytes": 8424
+    },
+    {
+      "id": "lbnl_chiller_documentation",
+      "path": "lbnl/chiller-documentation.pdf",
+      "url": "https://fdddata.lbl.gov/data/Simulated_LBNL_FDD_Data_Sets_Chiller_Plant/LBNL_FDD_Data_Sets_Chiller_Plant.pdf",
+      "kind": "documentation",
+      "license": "Release catalog declares CC BY 4.0",
+      "origin": "LBNL/PNNL September 1, 2022 documentation; DOI 10.25984/1881324",
+      "sha256": "4ed0dd7437672549b82261603f7a2632d57f1c0257ec51bce485fe4d8b405149",
+      "bytes": 754410,
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "lbnl_rtu",
+      "path": "lbnl/rtu-model.zip",
+      "url": "https://fdddata.lbl.gov/data/Simulated_LBNL_FDD_Data_Sets_RTU/LBNL_FDD_Data_Sets_RTU_ttl.zip",
+      "kind": "reference_graph_archive",
+      "member": "LBNL_FDD_Data_Sets_RTU_Sim.ttl",
+      "extracted_path": "lbnl/rtu.ttl",
+      "license": "CC BY 4.0 declared for release DOI 10.25984/1881324; no embedded per-file license",
+      "license_source": "https://catalog.data.gov/dataset/lbnl-fault-detection-and-diagnostics-datasets",
+      "origin": "public simulated EnergyPlus/Modelica single-zone RTU semantic model; not field BMS data; experimental member excluded",
+      "sha256": "622978d1bd8c3efed40b5e705f73cb77be9202ae075cdffe6fce7fe36d77f5dc",
+      "bytes": 1821,
+      "accessed": "2026-10-29",
+      "extracted_sha256": "4b31ad2dbbc732ab1b3849b5be763c05a6f3fd4bd5955a95b6684bc31f1f6100",
+      "extracted_bytes": 2362
+    }
+  ]
+}

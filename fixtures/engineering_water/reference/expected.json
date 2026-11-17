@@ -1,0 +1,8 @@
+{
+  "label": "SYNTHETIC / FOR TESTING ONLY; independently calculable arithmetic, not field truth",
+  "equation": "1000 kg/m3 * 4180 J/(kg*K) * 0.001 m3/s * (30-20) K",
+  "expected_power_W": 41800,
+  "samples": 3,
+  "unavailable_measurements_are_not_fabricated": true,
+  "reference_supplied_to_inference": false
+}

@@ -1,0 +1,142 @@
+{
+  "$defs": {
+    "Score": {
+      "additionalProperties": false,
+      "properties": {
+        "building_id": {
+          "title": "Building Id",
+          "type": "string"
+        },
+        "predicate": {
+          "title": "Predicate",
+          "type": "string"
+        },
+        "true_positive": {
+          "title": "True Positive",
+          "type": "integer"
+        },
+        "false_accepted": {
+          "title": "False Accepted",
+          "type": "integer"
+        },
+        "false_negative": {
+          "title": "False Negative",
+          "type": "integer"
+        },
+        "accepted_unknown": {
+          "title": "Accepted Unknown",
+          "type": "integer"
+        },
+        "accepted_unlabeled": {
+          "title": "Accepted Unlabeled",
+          "type": "integer"
+        },
+        "abstained_labeled": {
+          "title": "Abstained Labeled",
+          "type": "integer"
+        },
+        "precision": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Precision"
+        },
+        "recall": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Recall"
+        },
+        "coverage": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Coverage"
+        },
+        "abstention_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Abstention Rate"
+        }
+      },
+      "required": [
+        "building_id",
+        "predicate",
+        "true_positive",
+        "false_accepted",
+        "false_negative",
+        "accepted_unknown",
+        "accepted_unlabeled",
+        "abstained_labeled",
+        "precision",
+        "recall",
+        "coverage",
+        "abstention_rate"
+      ],
+      "title": "Score",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "evaluation-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "scope": {
+      "title": "Scope",
+      "type": "string"
+    },
+    "dataset_sha256": {
+      "title": "Dataset Sha256",
+      "type": "string"
+    },
+    "graph_sha256": {
+      "title": "Graph Sha256",
+      "type": "string"
+    },
+    "scores": {
+      "items": {
+        "$ref": "#/$defs/Score"
+      },
+      "title": "Scores",
+      "type": "array"
+    },
+    "independent_verification": {
+      "default": "PENDING OWNER VERIFICATION",
+      "title": "Independent Verification",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "dataset_sha256",
+    "graph_sha256",
+    "scores"
+  ],
+  "title": "EvaluationOutput",
+  "type": "object"
+}

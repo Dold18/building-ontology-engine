@@ -1,0 +1,4 @@
+connection_id,from_equipment,to_equipment,predicate,medium,connection_scope,direction_exclusive,status,source_description
+doc-1,Plant/A,East-Box,feeds,air,east-duct,true,supported_inference,SYNTHETIC duct schedule M-10
+doc-2,East-Box,Plant/A,feeds,air,east-duct,true,supported_inference,SYNTHETIC opposing control drawing M-11
+guess-3,Aux-X,East-Box,feeds,water,,false,needs_review,SYNTHETIC similarity hypothesis; no connection evidence

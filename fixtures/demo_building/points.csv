@@ -1,0 +1,9 @@
+point_id,description,equipment_id,units,value
+AHU1_SAT,Supply Air Temperature,AHU-1,degF,55.0
+AHU1_SAF_STS,Supply Fan Status,AHU-1,boolean,1
+AHU1_OAT,Outside Air Temperature,AHU-1,degF,75.0
+VAV101_ZT,Zone Temperature,VAV-101,degF,72.0
+VAV101_DPR,Airflow Damper Position,VAV-101,percent,45.0
+VAV102_ZT,Zone Temp,VAV-102,degF,73.0
+VAV102_DP,Pressure Reading,VAV-102,,1.3
+AMB_1,Temperature,,degF,70.0
