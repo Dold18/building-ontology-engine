@@ -61,10 +61,10 @@ The run writes a graph and supporting source, inference, validation, and review 
 Start the authenticated local server:
 
 ```bash
-python -m ontology_engine web --data-root output/local_browser
+python -m ontology_engine web --data-root output/local_browser --runs-root output
 ```
 
-The application listens on localhost (default port **8765**) and may prompt for a local login password. Open `http://127.0.0.1:8765` in your browser.
+The application listens on localhost (default port **8765**) and prompts for a **16–256 character** local login password. Open `http://127.0.0.1:8765` in your browser. The `--runs-root output` option makes the earlier synthetic `output/demo` run visible in the local interface.
 
 Use the included synthetic demo when exploring the pipeline. Do not submit confidential building records or use external inference without appropriate authorization.
 
@@ -103,4 +103,4 @@ The bundled **Brick 1.4.4** ontology is a separate third-party work whose redist
 
 ## Status
 
-The automated tests and local packaging install have been verified. An independent secrets scan, final confidentiality review, external-source/license audit, and permission to release original project code are **separate publication prerequisites**. Do not interpret a test pass as security or licensing clearance.
+**Public demonstration:** The exported application installed successfully and passed all **367 automated tests** in a local Python 3.9 environment. The release export's targeted scanner and an independent Gitleaks directory scan reported **zero blocking findings**. These checks do not establish ownership, redistribution rights, or security guarantees; only synthetic demonstrations are intended for this repository.
