@@ -6,6 +6,12 @@ A Python application that transforms building automation metadata—equipment li
 
 The public demonstration is built around **synthetic building datasets**. It is a software-engineering example, not a claim that a model reconstructed any particular real building or that its suggested relationships have been field-verified.
 
+## Interactive Ontology Explorer
+
+![Interactive ontology explorer showing synthetic HVAC equipment relationships and source-backed claim inspection](ontology-explorer.png)
+
+*Synthetic HVAC demonstration: 220 equipment assets, 340 points, and 1,110 evidence-tracked claims. The explorer allows inspection of documented equipment relationships and their supporting provenance; claims are not equivalent to field-verified connections.*
+
 ## What the system does
 
 - **Source-preserving ingestion:** Supports configurable CSV/XLSX input mappings, inventory, normalization, source hashes, and row-level provenance.
